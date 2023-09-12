@@ -1,0 +1,13 @@
+elpa
+auto-save-list
+*~
+.lsp-session-v1
+recentf
+transient
+.cache
+.*
+backup
+eln-cache
+eshell
+tramp
+ac-comphist.dat
