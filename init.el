@@ -206,7 +206,7 @@
 ;; Set default font size
 (set-face-attribute 'default nil :height 100)
 ;; Set font
-(set-frame-font "FiraCode Nerd Font 11" nil t)
+(set-frame-font "FiraMono Nerd Font 11" nil t)
 ;; (setq default-frame-alist '((font . "FiraCode Nerd Font 11")))
 
 ;; always live some line at the bottom and at the top 
