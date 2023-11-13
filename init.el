@@ -8,7 +8,7 @@
  '(org-agenda-files
    '("/home/jan/org/todo.org" "/home/jan/org/notes.org" "/home/jan/org/journal.org" "/home/jan/org/agenda.org"))
  '(package-selected-packages
-   '(lsp-treemacs lsp-mode-map cmake-mode zig-mode auto-package-update sublimity svelte-mode typescript-mode nerd-icons all-the-icons emmet-mode helm-lsp lsp-ui rust-mode pyvenv lsp-pyright pyright lsp-jedi jedi flycheck auto-complete company-jedi lsp-python-ms smooth-scroll org-journal kotlin-mode org-bullets auctex magit htmlize company-box company gruvbox-theme gruvbox rainbow-mode kurecolor tree-sitter-langs tree-sitter-lang tree-sitter lsp-mode yasnippet which-key helm use-package autothemer)))
+   '(origami zig-mode xcscope which-key use-package org-journal org-bullets nerd-icons magit lsp-ui lsp-treemacs lsp-pyright helm-xref helm-lsp gruvbox-theme flycheck company-box auctex all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
