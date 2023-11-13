@@ -197,7 +197,7 @@
       `((".*" . ,temporary-file-directory)))
 ;; Save the #autosave# files in a directory in /tmp
 (setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
+      `((".*" ,temporary-file-directory)))
 
 ;; Don't show the default emacs splash screen
 (setq inhibit-splash-screen t)
