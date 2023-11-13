@@ -139,6 +139,7 @@
   (company-idle-delay 0.0)
   (company-minimum-prefix-length 1)
   (lsp-idle-delay 0.1)
+  (lsp-on-type-formatting nil)
   :hook
   (lsp-mode-hook . lsp-enable-which-key-integration)
   (lsp-mode-hook . lsp-enable-xref)
