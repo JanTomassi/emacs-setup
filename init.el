@@ -147,6 +147,7 @@
   (javascript-mode-hook . lsp-deferred)
   (rust-mode . lsp-deferred)
   (c++-mode . lsp-deferred)
+  (c-mode . lsp-deferred)
   :commands
   (lsp lsp-deferred))
 
