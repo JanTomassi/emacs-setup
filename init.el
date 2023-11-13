@@ -224,10 +224,25 @@
 (setq mouse-wheel-follow-mouse 't)
 ;; keyboard scroll one line at a time
 (setq scroll-step 1)
-
-
+(setq treesit-language-source-alist
+      '((bash "https://github.com/tree-sitter/tree-sitter-bash")
+	(c "https://github.com/tree-sitter/tree-sitter-c")
+	(cpp "https://github.com/tree-sitter/tree-sitter-cpp")
+	(cmake "https://github.com/uyha/tree-sitter-cmake")
+	(elisp "https://github.com/Wilfred/tree-sitter-elisp")
+	(json "https://github.com/tree-sitter/tree-sitter-json")
+	(make "https://github.com/alemuller/tree-sitter-make")
+	(markdown "https://github.com/ikatyang/tree-sitter-markdown")
+	(python "https://github.com/tree-sitter/tree-sitter-python")
+	(toml "https://github.com/tree-sitter/tree-sitter-toml")
+	(yaml "https://github.com/ikatyang/tree-sitter-yaml")))
 
 
 ;; Start keybinding sections
 (global-set-key (kbd "C-v") (lambda () (interactive) (scroll-up-line 2)))
-(global-set-key (kbd "M-v") (lambda () (interactive) (scroll-down-line 2)))
+(keymap-global-set "M-v" (lambda () (interactive) (scroll-down-line 2)))
+(keymap-global-set "C-z" (lambda () (interactive) (ansi-term "/bin/zsh")))
+
+;; Adding hook
+(add-hook 'c-mode-common-hook (lambda () (c-set-offset 'inextern-lang 0)
+				(c-set-offset 'innamespace 0)))
