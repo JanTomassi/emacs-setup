@@ -178,10 +178,14 @@
   (zig-mode . (lambda () "prevent the exec of company" (company-mode -1))
   ))
 
-(use-package cmake-mode :ensure t)
+;; Major mode for cmake editing
+;; (use-package cmake-mode :ensure t)
+
+;; better ctags
+;; (use-package xcscope :ensure t)
 
 ;; Fast writing of htlm files
-(use-package emmet-mode :ensure t)
+;; (use-package emmet-mode :ensure t)
 
 
 ;; Enable the indicator at the bottom for the column number
