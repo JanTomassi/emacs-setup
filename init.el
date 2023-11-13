@@ -66,6 +66,11 @@
     (define-key global-map [remap execute-extended-command] #'helm-M-x)
     (define-key global-map [remap switch-to-buffer] #'helm-mini)))
 
+;; Helper for navigating window
+(use-package ace-window :ensure t
+  :bind
+  ("M-o" . ace-window))
+
 ;; Org mode stuff
 (use-package org :ensure t
   :config
