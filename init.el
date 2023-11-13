@@ -101,6 +101,17 @@
   :config
   (load-theme 'gruvbox-dark-hard))
 
+;; Folding functionality for many language
+;; https://github.com/gregsexton/origami.el
+(use-package origami :ensure t
+  :hook
+  (c-mode . origami-mode)
+  (c++-mode . origami-mode)
+  :bind
+  (:map origami-mode-map
+	("C-' c" . origami-close-node)
+	("C-' o" . origami-open-node)))
+
 ;; Commplition suggestion in a small windows under the cursor
 (use-package company :ensure t
   :bind
