@@ -246,17 +246,20 @@
 ;; keyboard scroll one line at a time
 (setq scroll-conservatively scroll-margin)
 (setq treesit-language-source-alist
-      '((bash "https://github.com/tree-sitter/tree-sitter-bash")
-	(c "https://github.com/tree-sitter/tree-sitter-c")
-	(cpp "https://github.com/tree-sitter/tree-sitter-cpp")
-	(cmake "https://github.com/uyha/tree-sitter-cmake")
-	(elisp "https://github.com/Wilfred/tree-sitter-elisp")
-	(json "https://github.com/tree-sitter/tree-sitter-json")
-	(make "https://github.com/alemuller/tree-sitter-make")
-	(markdown "https://github.com/ikatyang/tree-sitter-markdown")
-	(python "https://github.com/tree-sitter/tree-sitter-python")
-	(toml "https://github.com/tree-sitter/tree-sitter-toml")
-	(yaml "https://github.com/ikatyang/tree-sitter-yaml")))
+	  '((bash "https://github.com/tree-sitter/tree-sitter-bash")
+		(c "https://github.com/tree-sitter/tree-sitter-c")
+		(cpp "https://github.com/tree-sitter/tree-sitter-cpp")
+		(cmake "https://github.com/uyha/tree-sitter-cmake")
+		(elisp "https://github.com/Wilfred/tree-sitter-elisp")
+		(json "https://github.com/tree-sitter/tree-sitter-json")
+		(make "https://github.com/alemuller/tree-sitter-make")
+		(markdown "https://github.com/ikatyang/tree-sitter-markdown")
+		(python "https://github.com/tree-sitter/tree-sitter-python")
+		(toml "https://github.com/tree-sitter/tree-sitter-toml")
+		(yaml "https://github.com/ikatyang/tree-sitter-yaml")
+		(rust "https://github.com/tree-sitter/tree-sitter-rust")
+		(typescript "https://github.com/tree-sitter/tree-sitter-typescript.git")
+		(svelte "https://github.com/Himujjal/tree-sitter-svelte.git")))
 
 
 ;; Start keybinding sections
