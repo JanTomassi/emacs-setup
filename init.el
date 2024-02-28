@@ -229,11 +229,11 @@
 (setq inhibit-splash-screen t)
 ;; Row numbers are shown as absolute
 (setq display-line-numbers 'absolute)
-;; Set default font size
-(set-face-attribute 'default nil :height 100)
-;; Set font
-(set-frame-font "FiraMono Nerd Font 11" nil t)
-;; (setq default-frame-alist '((font . "FiraCode Nerd Font 11")))
+
+;; Set font for standallown emacs
+(set-frame-font "monospace 12" nil t)
+;; Setting applied on every new frame
+(modify-all-frames-parameters '((font . "monospace 12")))
 
 ;; always live some line at the bottom and at the top 
 (setq scroll-margin 3)
