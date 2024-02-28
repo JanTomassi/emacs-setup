@@ -57,6 +57,8 @@
 (use-package helm :ensure t
   :config
   (helm-mode)
+  :custom
+  (helm-candidate-number-limit 200))
 
   ;; Support for emacs xref in helm searching mode
   (use-package helm-xref :ensure t
