@@ -162,7 +162,8 @@
 (use-package lsp-treemacs :ensure t)
 ;; Support helm style searching for the lsp funcitonality
 (use-package helm-lsp :ensure t
-  :commands helm-lsp-workspace-symbol)
+  :commands
+  helm-lsp-workspace-symbol)
 
 
 ;; Python language servers
@@ -170,7 +171,8 @@
 ;; (setq lsp-jedi-workspace-extra-paths
 ;; 	 ["/home/jan/src/my-project/.venv/lib/python3.10/site-packages"])
 (use-package lsp-pyright :ensure t
-  :after lsp-mode)
+  :after
+  lsp-mode)
 
 (use-package flycheck :ensure t)
 
