@@ -28,7 +28,7 @@
 
 (tool-bar-mode 0) ;; Disable the tool bar at the top
 (menu-bar-mode 0) ;; Disable the menu bat at the top
-(scroll-bar-mode -1) ;; Disabel lateral scroll bar for all windows
+(scroll-bar-mode 0) ;; Disabel lateral scroll bar for all windows
 
 ;; Setup package repository
 (require 'package)
