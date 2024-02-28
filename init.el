@@ -199,7 +199,11 @@
 ;; (use-package xcscope :ensure t)
 
 ;; Fast writing of htlm files
-;; (use-package emmet-mode :ensure t)
+(use-package emmet-mode :ensure t)
+
+(use-package prettier :ensure t)
+
+
 
 
 ;; Enable the indicator at the bottom for the column number
