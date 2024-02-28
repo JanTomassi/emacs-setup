@@ -29,6 +29,7 @@
 (tool-bar-mode 0) ;; Disable the tool bar at the top
 (menu-bar-mode 0) ;; Disable the menu bat at the top
 (scroll-bar-mode 0) ;; Disabel lateral scroll bar for all windows
+(global-auto-revert-mode t) ;; Auto update if local file change
 
 ;; Setup package repository
 (require 'package)
