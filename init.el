@@ -273,4 +273,7 @@
 
 ;; No offset for class and namespace
 (add-hook 'c-mode-common-hook (lambda () (c-set-offset 'inextern-lang 0)
-				(c-set-offset 'innamespace 0)))
+								(c-set-offset 'innamespace 0)))
+
+;; Subword for C++
+(add-hook 'c++-mode-hook 'subword-mode)
