@@ -244,7 +244,7 @@
 ;; scroll window under mouse
 (setq mouse-wheel-follow-mouse 't)
 ;; keyboard scroll one line at a time
-(setq scroll-step 1)
+(setq scroll-conservatively scroll-margin)
 (setq treesit-language-source-alist
       '((bash "https://github.com/tree-sitter/tree-sitter-bash")
 	(c "https://github.com/tree-sitter/tree-sitter-c")
