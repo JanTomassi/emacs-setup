@@ -182,8 +182,7 @@
 ;; zig mode
 (use-package zig-mode :ensure t
   :hook
-  (zig-mode . (lambda () "prevent the exec of company" (company-mode -1))
-  ))
+  (zig-mode . (lambda () "prevent the exec of company" (company-mode -1)(subword-mode t))))
 
 ;; Major mode for cmake editing
 ;; (use-package cmake-mode :ensure t)
