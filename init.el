@@ -268,7 +268,9 @@
 (global-set-key (kbd "M-v") (lambda () (interactive) (scroll-down-line 4)))
 (global-set-key (kbd "C-z") (lambda () (interactive) (ansi-term "/bin/zsh")))
 
-;; Adding hook
+;; Zero margin for terminal
 (add-hook 'term-mode-hook (lambda () (setq-local scroll-margin 0)))
+
+;; No offset for class and namespace
 (add-hook 'c-mode-common-hook (lambda () (c-set-offset 'inextern-lang 0)
 				(c-set-offset 'innamespace 0)))
