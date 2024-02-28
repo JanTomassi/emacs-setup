@@ -60,13 +60,13 @@
   :custom
   (helm-candidate-number-limit 200))
 
-  ;; Support for emacs xref in helm searching mode
-  (use-package helm-xref :ensure t
-    :config
-    (require 'helm-xref)
-    (define-key global-map [remap find-file] #'helm-find-files)
-    (define-key global-map [remap execute-extended-command] #'helm-M-x)
-    (define-key global-map [remap switch-to-buffer] #'helm-mini)))
+;; Support for emacs xref in helm searching mode
+(use-package helm-xref :ensure t
+  :config
+  ;;(define-key global-map [remap find-file] #'helm-find-files)
+  (define-key global-map [remap execute-extended-command] #'helm-M-x)
+  ;;(define-key global-map [remap switch-to-buffer] #'helm-mini))
+  )
 
 ;; Helper for navigating window
 (use-package ace-window :ensure t
