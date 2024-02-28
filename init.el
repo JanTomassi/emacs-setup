@@ -215,6 +215,9 @@
 ;; (setq make-backup-files nil) ; stop creating backup~ files
 ;; (setq auto-save-default nil) ; stop creating #autosave# files
 
+;; Select tab width
+(setq-default tab-width 4)
+
 ;; Save the backup~ files in a directory in /tmp
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
