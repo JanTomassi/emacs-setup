@@ -184,6 +184,14 @@
   :hook
   (zig-mode . (lambda () "prevent the exec of company" (company-mode -1)(subword-mode t))))
 
+(use-package glsl-mode :ensure t)
+
+(use-package web-mode :ensure t
+  :custom
+  (indent-tabs-mode t)
+  (tab-width 4)
+  (web-mode-enable-auto-indentation nil))
+
 ;; Major mode for cmake editing
 ;; (use-package cmake-mode :ensure t)
 
