@@ -142,14 +142,17 @@
   (company-minimum-prefix-length 1)
   (lsp-idle-delay 0.1)
   (lsp-on-type-formatting nil)
+  (lsp-javascript-format-enable nil)
+  (lsp-typescript-format-enable nil)
   :hook
   (lsp-mode-hook . lsp-enable-which-key-integration)
   (lsp-mode-hook . lsp-enable-xref)
-  (typescript-mode-hook . lsp-deferred)
-  (javascript-mode-hook . lsp-deferred)
+  (typescript-ts-mode . lsp-deferred)
+  (javascript-mode . lsp-deferred)
   (rust-mode . lsp-deferred)
   (c++-mode . lsp-deferred)
   (c-mode . lsp-deferred)
+  (rust-ts-mode . lsp-deferred)
   :commands
   (lsp lsp-deferred))
 
