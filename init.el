@@ -263,9 +263,9 @@
 
 
 ;; Start keybinding sections
-(global-set-key (kbd "C-v") (lambda () (interactive) (scroll-up-line 2)))
-(keymap-global-set "M-v" (lambda () (interactive) (scroll-down-line 2)))
-(keymap-global-set "C-z" (lambda () (interactive) (ansi-term "/bin/zsh")))
+(global-set-key (kbd "C-v") (lambda () (interactive) (scroll-up-line 4)))
+(global-set-key (kbd "M-v") (lambda () (interactive) (scroll-down-line 4)))
+(global-set-key (kbd "C-z") (lambda () (interactive) (ansi-term "/bin/zsh")))
 
 ;; Adding hook
 (add-hook 'c-mode-common-hook (lambda () (c-set-offset 'inextern-lang 0)
